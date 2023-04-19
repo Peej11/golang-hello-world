@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestHello(t *testing.T) {
-	got := Hello()
-	want := "Hello, world"
+	got := Hello("James")
+	want := "Hello, James"
 
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
