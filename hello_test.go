@@ -22,6 +22,6 @@ func TestHello(t *testing.T) {
     }
     
     if string(data) != expected {
-        t.Errorf("Expected Hello James but got %v", string(data))
+        t.Errorf("Expected '" + expected + "' but got '%v'", string(data))
     }
 }
